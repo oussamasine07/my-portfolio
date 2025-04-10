@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --dark-blue: #030712;
+    --gray: #1F2937;
+    --soft-green: #14B8A6;
+    --sky-blue: #2563EB;
+    --white: #F9FAFB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-image: url("./assets/bg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: var(--white);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
