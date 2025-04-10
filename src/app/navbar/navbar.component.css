@@ -1,0 +1,88 @@
+@import url('../../styles.css');
+
+.navbar {
+    width: 90%;
+    padding: 10px 40px;
+    background-color: rgba(249, 250, 251, 0.04);
+    border: 1px solid #1F2937;
+    border-radius: 8px;
+    position: fixed;
+    top: 20px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.logo-wrapper,
+.social-links-wrapper { flex: 1; }
+.nav-links-wrapper { flex: 3; }
+
+.logo-wrapper,
+.nav-links-wrapper .items,
+.social-links-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    color: var(--white);
+}
+
+.logo-link .logo-image {
+    width: 100px;
+}
+
+.nav-links-wrapper .items {
+    justify-content: center;
+}
+
+.nav-links-wrapper .items .item {
+    margin: 0 20px;
+}
+
+.nav-links-wrapper .items .item:hover .item-link {
+    color: var(--soft-green);
+}
+
+.nav-links-wrapper .items .item .item-link {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 500;
+    transition: all ease .3s;
+}
+
+.nav-links-wrapper .items .item .item-link.link-active {
+    color: var(--soft-green);
+}
+
+.social-links-wrapper {
+    justify-content: flex-end;
+}
+
+.social-links-wrapper .social-item {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;    
+}
+
+.social-links-wrapper .social-item:hover .social-link {
+    color: var(--soft-green);
+}
+
+.social-links-wrapper .social-item .social-link {
+    color: var(--dark-blue);
+    transition: all ease .3s;
+}
