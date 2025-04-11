@@ -17,10 +17,9 @@ body {
     font-family: "Nunito Sans", sans-serif;
     background-image: url("../public/assets/bg.svg");
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    background-attachment: fixed;
+    background-size: auto;
     color: var(--white);
 }
 
@@ -31,3 +30,10 @@ ul { list-style: none; }
     width: 90%;
     margin: 0 auto;
 }
+
+.py-main {
+    padding: 50px 0;
+}
+
+.text-blue { color: var(--sky-blue); }
+.text-green { color: var(--soft-green); }

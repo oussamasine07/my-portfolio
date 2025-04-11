@@ -8,6 +8,9 @@
     border-radius: 8px;
     position: fixed;
     top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
 }
 
 .nav-items {

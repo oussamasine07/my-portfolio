@@ -1,0 +1,32 @@
+.home {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-center {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.hero-main-content { flex: 2; }
+
+.hero-main-content .hero-title {
+    font-size: 80px;
+    font-weight:bolder;
+    line-height: 1;
+}
+
+.hero-main-content .hero-profile-text {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.hero-main-content .hero-caption {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.hero-main-image { flex: 1; }
