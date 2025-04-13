@@ -11,6 +11,7 @@
     left: 50%;
     transform: translateX(-50%);
     backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .nav-items {
