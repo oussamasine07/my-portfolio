@@ -19,8 +19,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     color: var(--white);
+    width: 100%
 }
 
 a { text-decoration: none; }
@@ -37,3 +38,43 @@ ul { list-style: none; }
 
 .text-blue { color: var(--sky-blue); }
 .text-green { color: var(--soft-green); }
+
+.hero-btn-links {
+    display: flex;
+    align-items: center;
+}
+
+.btn-bordered,
+.btn-filled {
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight:600;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1.5px solid var(--soft-green);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.btn-bordered {
+    color: var(--soft-green);
+    background: transparent;
+}
+
+.btn-bordered:hover {
+    color: var(--dark-blue);
+    background: var(--soft-green);
+}
+
+.btn-filled {
+    margin-left: 10px;
+    background-color: var(--soft-green);
+    color: var(--dark-blue);
+}
+
+.btn-filled:hover {
+    background-color: transparent;
+    color: var(--soft-green);
+}

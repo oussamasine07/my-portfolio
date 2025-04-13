@@ -9,5 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     home.style.marginTop = `${marginTop}px`;
 
+    // dynamic height for hero content
+    const heroCenterHeight = window.innerHeight - marginTop - 20;
+    const heroCenter = document.querySelector(".hero-center");
+    heroCenter.style.height = `${ heroCenterHeight }px`;
+
 
 })
