@@ -78,3 +78,11 @@ ul { list-style: none; }
     background-color: transparent;
     color: var(--soft-green);
 }
+
+.section-title {
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--sky-blue);
+    line-height: 1;
+}
