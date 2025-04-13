@@ -5,12 +5,13 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   imports: [ 
     NavbarComponent, HomeComponent, AboutComponent, 
-    PortfolioComponent, SkillsComponent 
+    PortfolioComponent, SkillsComponent, ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
