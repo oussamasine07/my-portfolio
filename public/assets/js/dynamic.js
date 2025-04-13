@@ -16,7 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // dynamic about image
     const aboutImage = document.querySelector(".image-wrapper")
-    const aboutWidth = aboutImage.offsetWidth;
-    if (aboutImage) aboutImage.style.height = `${aboutWidth}px`;
+    if (aboutImage) {
+        const aboutWidth = aboutImage.offsetWidth;
+        aboutImage.style.height = `${aboutWidth}px`;
+    }
+
+    // dynamic skill width
+    const skills = document.querySelectorAll(".skill-wrapper");
+    if (skills) {
+        skills.forEach(skill => {
+            const skillWidth = skill.offsetWidth;
+            const circleWidth = skill.lastChild.offsetWidth;
+            skill.firstChild.style.width = `${skillWidth - (circleWidth / 2)}px`;
+            console.log(skillWidth - (circleWidth / 2))
+        })
+    }
 
 })

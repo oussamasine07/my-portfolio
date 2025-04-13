@@ -1,0 +1,58 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.skills-grid .skill-wrapper {
+    position: relative;
+}
+
+.skills-grid .skill-wrapper .skill-border {
+    border: 1px solid #1F2937;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.skills-grid .skill-wrapper .skill-border .skill-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+
+.skills-grid .skill-wrapper .skill-border .skill-icon-wrapper .skill-icon {
+    width: 50%;
+}
+
+.skills-grid .skill-wrapper .skill-border .skill-label {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.skills-grid .skill-wrapper .percentage-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--soft-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.skills-grid .skill-wrapper .percentage-circle .percentage {
+    font-size: 1rem;
+    font-weight: 500;
+}
