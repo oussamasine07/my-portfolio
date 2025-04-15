@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
+  projects = [
+    {
+      id: 1,
+      title: "Nomassa",
+      description: "eCommerce website where to sell digital products."
+    },
+    {
+      id: 2,
+      title: "robo punk",
+      description: "Project for minting NFT based on React.js."
+    },
+  ]
+
 }

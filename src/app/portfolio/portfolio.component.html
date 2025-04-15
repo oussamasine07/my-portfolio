@@ -2,7 +2,23 @@
     <h1 class="section-title text-center">what i've made so far</h1>
 
     <div class="portfolio-grid mt-50">
-        <div class="card">
+
+        @for (project of projects; track project.id) {
+            <div class="card">
+                <div class="card-image-wrapper">
+                    <img src="assets/images/portfolio/nomssa.png" alt="nomssa" class="card-image">
+                </div>
+                <h3 class="project-title">{{ project.title }}</h3>
+                <div class="project-details">
+                    <p class="project-description">{{ project.description }}</p>
+                    <a href="#" class="project-link">
+                        show 
+                    </a>
+                </div>
+            </div>
+        }
+
+        <!-- <div class="card">
             <div class="card-image-wrapper">
                 <img src="assets/images/portfolio/nomssa.png" alt="nomssa" class="card-image">
             </div>
@@ -61,6 +77,6 @@
                     show 
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
